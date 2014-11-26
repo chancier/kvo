@@ -14,6 +14,10 @@
 		749A591A1A25CABF00A14A16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 749A59191A25CABF00A14A16 /* Images.xcassets */; };
 		749A591D1A25CABF00A14A16 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749A591B1A25CABF00A14A16 /* LaunchScreen.xib */; };
 		749A59291A25CABF00A14A16 /* KVODemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 749A59281A25CABF00A14A16 /* KVODemoTests.m */; };
+		749A59341A25CEF500A14A16 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 749A59331A25CEF500A14A16 /* DataModel.m */; };
+		749A59381A25D09600A14A16 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 749A59351A25D09600A14A16 /* Roboto-Medium.ttf */; };
+		749A59391A25D09600A14A16 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 749A59361A25D09600A14A16 /* Roboto-Light.ttf */; };
+		749A593A1A25D09600A14A16 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 749A59371A25D09600A14A16 /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 		749A59221A25CABF00A14A16 /* KVODemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVODemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		749A59271A25CABF00A14A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		749A59281A25CABF00A14A16 /* KVODemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVODemoTests.m; sourceTree = "<group>"; };
+		749A59321A25CEF500A14A16 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		749A59331A25CEF500A14A16 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		749A59351A25D09600A14A16 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		749A59361A25D09600A14A16 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		749A59371A25D09600A14A16 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +90,15 @@
 		749A590B1A25CABF00A14A16 /* KVODemo */ = {
 			isa = PBXGroup;
 			children = (
+				749A59351A25D09600A14A16 /* Roboto-Medium.ttf */,
+				749A59361A25D09600A14A16 /* Roboto-Light.ttf */,
+				749A59371A25D09600A14A16 /* Roboto-Regular.ttf */,
 				749A59101A25CABF00A14A16 /* AppDelegate.h */,
 				749A59111A25CABF00A14A16 /* AppDelegate.m */,
 				749A59131A25CABF00A14A16 /* ViewController.h */,
 				749A59141A25CABF00A14A16 /* ViewController.m */,
+				749A59321A25CEF500A14A16 /* DataModel.h */,
+				749A59331A25CEF500A14A16 /* DataModel.m */,
 				749A59161A25CABF00A14A16 /* Main.storyboard */,
 				749A59191A25CABF00A14A16 /* Images.xcassets */,
 				749A591B1A25CABF00A14A16 /* LaunchScreen.xib */,
@@ -199,7 +213,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749A593A1A25D09600A14A16 /* Roboto-Regular.ttf in Resources */,
+				749A59381A25D09600A14A16 /* Roboto-Medium.ttf in Resources */,
 				749A59181A25CABF00A14A16 /* Main.storyboard in Resources */,
+				749A59391A25D09600A14A16 /* Roboto-Light.ttf in Resources */,
 				749A591D1A25CABF00A14A16 /* LaunchScreen.xib in Resources */,
 				749A591A1A25CABF00A14A16 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				749A59151A25CABF00A14A16 /* ViewController.m in Sources */,
+				749A59341A25CEF500A14A16 /* DataModel.m in Sources */,
 				749A59121A25CABF00A14A16 /* AppDelegate.m in Sources */,
 				749A590F1A25CABF00A14A16 /* main.m in Sources */,
 			);
@@ -414,6 +432,7 @@
 				749A592E1A25CABF00A14A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		749A592F1A25CABF00A14A16 /* Build configuration list for PBXNativeTarget "KVODemoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +441,7 @@
 				749A59311A25CABF00A14A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
