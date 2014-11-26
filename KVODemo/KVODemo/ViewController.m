@@ -22,7 +22,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+{
+    NSInteger changeValue;
+}
 @end
 
 @implementation ViewController
@@ -64,8 +66,9 @@
 
 - (IBAction)changeValue:(id)sender
 {
-    [model setValue:@"finsh" forKey:@"dataName"];
-    model.txtName = @"dddd";
+    changeValue++;
+    [model setValue:[NSString stringWithFormat:@"dataName value%ld",changeValue] forKey:@"dataName"];
+    model.txtName = [NSString stringWithFormat:@"txtName value%ld",changeValue];
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
