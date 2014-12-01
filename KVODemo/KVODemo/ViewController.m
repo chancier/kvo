@@ -34,6 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     NSArray *familyNames = [UIFont familyNames];
     
     for( NSString *familyName in familyNames ){
@@ -85,7 +86,8 @@
 
 -(void)dealloc
 {
-     [model removeObserver:self forKeyPath:@"dataName"];
+    [model removeObserver:self forKeyPath:@"dataName"];
+    [model removeObserver:self forKeyPath:@"txtName"];
 }
 
 - (void)didReceiveMemoryWarning {
